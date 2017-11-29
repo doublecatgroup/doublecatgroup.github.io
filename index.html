@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script>
+      var xhr = new XMLHttpRequest()
+      xhr.overrideMimeType('text/plain')
+      xhr.onload = function () {
+        window.location.replace(xhr.responseText.trim() + '.html')
+      }
+      xhr.open('GET', 'latest?t=' + new Date().getTime(), true)
+      xhr.send(null);
+    </script>
+	</body>
+</html>
