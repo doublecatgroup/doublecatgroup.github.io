@@ -8,7 +8,7 @@
       var xhr = new XMLHttpRequest()
       xhr.overrideMimeType('text/plain')
       xhr.onload = function () {
-        window.location.replace(xhr.responseText.trim() + '.html')
+        window.location.replace(xhr.responseText.trim())
       }
       xhr.open('GET', 'latest?t=' + new Date().getTime(), true)
       xhr.send(null);
