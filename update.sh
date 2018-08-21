@@ -13,3 +13,5 @@ echo $md5 > latest
 git add .
 git commit -m update
 git push origin master
+
+cat latest
